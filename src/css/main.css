@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Fahkwang";
+  src: url("../fonts/Fahkwang.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat.ttf");
+}
+
+:root {
+  /* Font Styles */
+  --fahkwang-font: "Fahkwang", serif;
+  --montserrat-font: "Montserrat", sans-serif;
+
+  /* Color Styles */
+  --light-color: #f6fbff;
+  --white-color: #fdfeff;
+  --dark-color: #313542;
+  --primary-color: #729592;
+  --secondary-color: #658481;
+  --shadow-color: #484b4e9a;
+  --transparent-color: #fdfeff00;
+}
+
+::selection {
+  color: var();
+  background-color: var();
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var() var();
+}
+
+body {
+  font-family: var(--montserrat-font);
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  background-image: url('../img/icon-back.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-family: var(--fahkwang-font);
+  padding: 30px 100px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.logo-container h1 {
+  margin-left: 5px;
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.menu-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--white-color);
+  border-radius: 5px;
+  padding: 20px 40px;
+}
+
+.menu-container li {
+  display: inline;
+  margin-left: 15px;
+  transition: all .3s ease-in-out;
+}
+
+.menu-container li:hover {
+  color: var(--primary-color);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+.bx {
+  margin-right: 5px;
+}
+
