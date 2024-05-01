@@ -83,11 +83,7 @@ body {
 }
 
 .menu-container {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  background: rgba(255, 255, 255, 0.3);
-  border: 1px solid var(--white-color);
+  display: contents;
   border-radius: 5px;
   padding: 20px 40px;
 }
@@ -192,6 +188,7 @@ body {
 }
 
 .card-text h3 {
+  font-size: 16px;
   font-weight: 500;
   margin-left: 7px;
 }
@@ -238,4 +235,61 @@ th, td {
   padding: 10px;
   text-align: center;
   border: 1px solid var(--dark-color);
+}
+
+@media (max-width: 1120px) {
+  .card {
+    width: calc(30% - 10px);
+  }
+}
+
+@media (max-width: 940px) {
+  body {
+    background-size: cover;
+  }
+
+  .logo-container h1 {
+    display: none;
+  }
+
+  #header .button p {
+    display: none;
+  }
+
+  .card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 640px) {
+  #header {
+    padding: 20px 50px;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  #hero p {
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  #tasks h2 {
+    font-size: 36px;
+  }
+
+  .card {
+    width: calc(100% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  #tasks {
+    padding: 10px 50px;
+  }
+
+  #tasks h2 {
+    text-align: center;
+  }
 }
