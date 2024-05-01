@@ -47,3 +47,46 @@ function bubble() {
   }
   document.getElementById('result').innerHTML = numbers.join(', ');
 }
+
+function arraySum() {
+  let numbers = [5, 10, 15, 20, 25];
+
+  let sum = numbers.reduce(function(a, b){ 
+    return a + b;
+  }, 0);
+
+  document.getElementById('result').innerHTML = '<b>Sum: </b>' + sum;
+}
+
+function inputSum() {
+  let a = parseFloat(document.getElementById('i1').value);
+  let b = parseFloat(document.getElementById('i2').value);
+
+  let sum = a + b;
+
+  alert('Sum: ' + sum);
+}
+
+let users = [];
+
+function saveUser() {
+  let name = document.getElementById('uname').value;
+  let surname = document.getElementById('usurname').value;
+  let age = document.getElementById('uage').value;
+
+  let user = {
+    name: name,
+    surname: surname,
+    age: age
+  };
+  users.push(user);
+}
+
+function showUser() {
+  let show_user = document.getElementById('result');
+  show_user.innerHTML = '';
+
+  users.forEach(user => {
+    show_user.innerHTML += `Name: ${user.name}<br>Surname: ${user.surname}<br>Age: ${user.age}<br>`;
+  });
+}

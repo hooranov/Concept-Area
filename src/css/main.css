@@ -68,6 +68,10 @@ body {
   padding: 30px 100px;
 }
 
+#header .button i {
+  display: none;
+}
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -99,9 +103,6 @@ body {
 }
 
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   padding: 10px 20px;
   border-radius: 5px;
@@ -256,6 +257,10 @@ th, td {
     display: none;
   }
 
+  #header .button i {
+    display: block;
+  }  
+
   .card {
     width: calc(50% - 10px);
   }
@@ -281,6 +286,10 @@ th, td {
 
   .card {
     width: calc(100% - 10px);
+  }
+
+  #result {
+    width: 300px;
   }
 }
 

@@ -27,8 +27,14 @@
     </header>
 
     <div class="container">
-      <h2>Array Sum</h2>
-      <button class="button" onclick="arraySum()">Sum</button>
+      <h2>User Data</h2>
+      <input type="text" id="uname" placeholder="Enter your name">
+      <input type="text" id="usurname" placeholder="Enter your surname">
+      <input type="number" id="uage" placeholder="Enter your age">
+      <div class="buttons">
+        <button class="button" onclick="saveUser()">Save</button>
+        <button class="button" onclick="showUser()">Show</button>
+      </div>
       <div id="result"></div>
     </div>
 
